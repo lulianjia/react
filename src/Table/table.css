@@ -1,0 +1,20 @@
+table {
+  border: 1px solid #eee;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #eee;
+  padding: 10px 15px;
+  text-align: center;
+}
+
+th {
+  background-color: #aaa;
+
+}
+
+.count {
+  margin: 0 5px;
+}
