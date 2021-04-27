@@ -1,6 +1,6 @@
 
 import React from 'react'
-import Parent from './组件传值和propTypes/Parent';
+import Parent from './propTypes/Parent';
 import Table from './Table/Table'
 import './Table/table.css'
 
