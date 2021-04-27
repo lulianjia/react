@@ -1,10 +1,12 @@
 
-function App() {
-  return (
-    <div className="App">
-    <h3>practise</h3>
-    </div>
-  );
-}
+import React from 'react'
+import Parent from './组件传值和propTypes/Parent';
 
-export default App;
+
+export default function App() {
+  return (
+    <div>
+      <Parent/ >
+    </div>
+  )
+}
