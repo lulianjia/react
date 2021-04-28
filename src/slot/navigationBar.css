@@ -1,0 +1,25 @@
+.nav-container{
+  display: flex;
+  height: 40px;
+  width: 100%;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+.nav-container div{
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+.nav-left{
+  background: chartreuse;
+  width: 70px;
+}
+.nav-center{
+  flex: 1;
+}
+.nav-right{
+  background: chocolate;
+  width: 80px;
+}
