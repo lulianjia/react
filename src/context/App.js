@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import Profile from './Profile_fun'
+import React, { Component } from "react";
+import Profile from "./Profile_fun";
 
 // 在一个典型的 React 应用中，数据是通过 props 属性自上而下（由父及子）进行传递的，
 // 但此种用法对于某些类型的属性而言是极其繁琐的（例如：地区偏好，UI 主题），
@@ -18,25 +18,24 @@ import Profile from './Profile_fun'
 // 1.默认值,当向上没有找到context 如 line 35，<Profile />写在Provider外面的时候会展示默认值
 
 export const UserContext = React.createContext({
-  nickname : "xxxx",
-  level:-1
-})
-export const ThemeContext = React.createContext({color:""})
-
+  nickname: "xxxx",
+  level: -1,
+});
+export const ThemeContext = React.createContext({ color: "" });
 
 export default class App extends Component {
   render() {
     return (
       <div>
         {/* 2.实际传递的数据 */}
-       <UserContext.Provider value={{nickname:"lebron james",level:23}}>  
-         <ThemeContext.Provider value={{color:"skyblue"}}>
+        <UserContext.Provider value={{ nickname: "lebron james", level: 23 }}>
+          <ThemeContext.Provider value={{ color: "skyblue" }}>
             <Profile />
-         </ThemeContext.Provider>
-       </UserContext.Provider>
+          </ThemeContext.Provider>
+        </UserContext.Provider>
 
-       {/* <Profile /> */}
+        {/* <Profile /> */}
       </div>
-    )
+    );
   }
 }
